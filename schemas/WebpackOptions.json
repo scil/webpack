@@ -1889,6 +1889,15 @@
         "global": {
           "description": "Include a polyfill for the 'global' variable.",
           "type": "boolean"
+        },
+        "include": {
+          "description": "apply for which path",
+          "anyOf": [
+            {
+              "instanceof": "RegExp",
+              "tsType": "RegExp"
+            }
+          ]
         }
       }
     },
